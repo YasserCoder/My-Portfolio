@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +6,44 @@
 :root {
     --color-main: #202224;
     --color-bkg: #f8f8f8;
+    --color-secondary-bkg: #fff;
 }
 :root[data-theme="dark"] {
     --color-main: #f5f6fa;
     --color-bkg: #1a1a1a;
+    --color-secondary-bkg: #2a2a2a;
+}
+
+.toggle {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.input {
+    display: none;
+}
+
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 300ms;
+}
+
+.icon--moon {
+    transition-delay: 100ms;
+}
+
+.icon--sun {
+    transform: scale(0);
+}
+
+#switch:checked + .icon--moon {
+    transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
 }

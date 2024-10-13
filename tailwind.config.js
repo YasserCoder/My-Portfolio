@@ -8,10 +8,14 @@ module.exports = {
             padding: "15px",
         },
         extend: {
+            fontFamily: {
+                body: ["Nunito Sans"],
+            },
             colors: {
                 main: "var(--color-main)",
                 bkg: "var(--color-bkg)",
-                colored: "#4880ff",
+                secondary: "var(--color-secondary-bkg)",
+                colored: "#FF9D29",
             },
             screens: {
                 xs: "400px",
