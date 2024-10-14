@@ -11,8 +11,21 @@
         <script defer src="./app.js"></script>
     </head>
     <body class="font-body bg-bkg text-main duration-300">
-        <section class="container">
-            <header class="flex justify-between items-center py-4" id="#header">
+        <section class="container relative h-[400px] overflow-x-clip">
+            <header
+                class="flex justify-between items-center pt-4 pb-2 border-b"
+                id="#header"
+            >
+                <label class="buttons__burger sm:hidden" for="burger">
+                    <input
+                        type="checkbox"
+                        id="burger"
+                        onchange="handleMenu()"
+                    />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <img
                     src="./assets/logo black.png"
                     alt="logo"
@@ -23,30 +36,30 @@
                     alt="logo"
                     class="h-10 w-12 hidden dark:block"
                 />
-                <ul class="flex gap-x-4 items-center">
+                <ul class="sm:flex gap-x-4 items-center hidden">
                     <li
-                        class="capitalize text-lg hover:text-colored duration-300"
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
                         <a href="#">home</a>
                     </li>
                     <li
-                        class="capitalize text-lg hover:text-colored duration-300"
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
                         <a href="#">about</a>
                     </li>
                     <li
-                        class="capitalize text-lg hover:text-colored duration-300"
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
                         <a href="#">education</a>
                     </li>
                     <li
-                        class="capitalize text-lg hover:text-colored duration-300"
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
                         <a href="#">projects</a>
                     </li>
                 </ul>
 
-                <div class="flex gap-x-4 items-center relative">
+                <div class="flex gap-x-2 sm:gap-x-4 items-center relative">
                     <button
                         onclick="handleLang(event)"
                         id="toggleLang"
@@ -149,6 +162,46 @@
                     </label>
                 </div>
             </header>
+            <nav
+                class="absolute h-[calc(100%-65px)] w-48 flex flex-col items-center gap-14 py-8 px-6 bg-secondary z-40 top-[65px] duration-300 -translate-x-[calc(100%+15px)]"
+            >
+                <img
+                    src="./assets/logo black.png"
+                    alt="logo"
+                    class="h-12 w-12 dark:hidden"
+                />
+                <img
+                    src="./assets/logo white.png"
+                    alt="logo"
+                    class="h-12 w-12 hidden dark:block"
+                />
+                <ul class="flex flex-col gap-y-3 list-disc">
+                    <li
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
+                    >
+                        <a href="#">home</a>
+                    </li>
+                    <li
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
+                    >
+                        <a href="#">about</a>
+                    </li>
+                    <li
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
+                    >
+                        <a href="#">education</a>
+                    </li>
+                    <li
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
+                    >
+                        <a href="#">projects</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="pt-12">
+                <p class="text-2xl">Hey, I'm Yasser</p>
+                <p class="text-2xl">I'm a front-end developer</p>
+            </div>
         </section>
     </body>
 </html>

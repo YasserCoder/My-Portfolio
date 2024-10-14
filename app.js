@@ -26,14 +26,32 @@ const toggleLangMenu = document.getElementById("toggleLang");
 function handleLang() {
     langMenu.classList.toggle("hidden");
 }
+
+// document.documentElement.nextElementSibling.classList.toggle('hidden')
+
+// Controling the responsive Menu
+
+const menu = document.querySelector("nav");
+const burger = document.getElementById("burger");
+const burgerLabel = document.querySelector(".buttons__burger");
+
+function handleMenu() {
+    menu.classList.toggle("-translate-x-[calc(100%+15px)]");
+}
+
 document.addEventListener("click", (event) => {
-    const isClickInside =
+    const isClickInsideLang =
         langMenu.contains(event.target) ||
         toggleLangMenu.contains(event.target);
 
-    if (!isClickInside) {
-        langMenu.classList.add("hidden"); // Close the menu by adding 'hidden' class
+    const isClickInsideMenu =
+        menu.contains(event.target) || burgerLabel.contains(event.target);
+
+    if (!isClickInsideLang) {
+        langMenu.classList.add("hidden");
+    }
+    if (!isClickInsideMenu && burger.checked) {
+        menu.classList.add("-translate-x-[calc(100%+15px)]");
+        burger.checked = false;
     }
 });
-
-// document.documentElement.nextElementSibling.classList.toggle('hidden')
