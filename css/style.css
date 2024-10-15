@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,8 +76,6 @@
 
 .buttons__burger span:nth-of-type(1) {
     top: 0;
-    left: 0;
-    transform-origin: left center;
 }
 
 .buttons__burger span:nth-of-type(2) {
@@ -86,19 +85,43 @@
 
 .buttons__burger span:nth-of-type(3) {
     top: 100%;
-    left: 0;
-    transform-origin: left center;
     transform: translateY(-100%);
 }
 
-.buttons__burger #burger:checked ~ span:nth-of-type(1) {
+html[dir="ltr"] .buttons__burger span:nth-of-type(3),
+html[dir="ltr"] .buttons__burger span:nth-of-type(1) {
+    left: 0;
+    transform-origin: left center;
+}
+html[dir="rtl"] .buttons__burger span:nth-of-type(3),
+html[dir="rtl"] .buttons__burger span:nth-of-type(1) {
+    right: 0;
+    transform-origin: right center;
+}
+
+html[dir="ltr"] .buttons__burger #burger:checked ~ span:nth-of-type(1),
+html[dir="rtl"] .buttons__burger #burger:checked ~ span:nth-of-type(3) {
     transform: translateY(-30%) rotate(-40deg);
     width: 50%;
     top: 50%;
 }
 
-.buttons__burger #burger:checked ~ span:nth-of-type(3) {
+html[dir="ltr"] .buttons__burger #burger:checked ~ span:nth-of-type(3),
+html[dir="rtl"] .buttons__burger #burger:checked ~ span:nth-of-type(1) {
     transform: translateY(-70%) rotate(40deg);
     width: 50%;
     top: 50%;
+}
+
+html[dir="ltr"] .hide_menu {
+    transform: translateX(calc(-100% - 15px));
+}
+html[dir="rtl"] .hide_menu {
+    transform: translateX(calc(100% + 15px));
+}
+html[dir="ltr"] #langMenu {
+    right: 8px;
+}
+html[dir="rtl"] #langMenu {
+    left: 8px;
 }

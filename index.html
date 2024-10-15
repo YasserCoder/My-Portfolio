@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html dir="ltr" data-theme="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,10 @@
         <!-- CSS Main File -->
         <link rel="stylesheet" href="css/output.css" />
         <!-- JS Main File -->
-        <script defer src="./app.js"></script>
+        <script type="module" src="./js/app.js" defer></script>
     </head>
     <body class="font-body bg-bkg text-main duration-300">
-        <section class="container relative h-[400px] overflow-x-clip">
+        <section class="container relative h-[600px] overflow-x-clip">
             <header
                 class="flex justify-between items-center pt-4 pb-2 border-b"
                 id="#header"
@@ -40,22 +40,27 @@
                     <li
                         class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
-                        <a href="#">home</a>
+                        <a href="#" data-i18n="home">home</a>
                     </li>
                     <li
                         class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
-                        <a href="#">about</a>
+                        <a href="#" data-i18n="about">about</a>
                     </li>
                     <li
                         class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
-                        <a href="#">education</a>
+                        <a href="#" data-i18n="skills">skills</a>
                     </li>
                     <li
                         class="capitalize text-lg hover:text-indigo-500 duration-300"
                     >
-                        <a href="#">projects</a>
+                        <a href="#" data-i18n="education">education</a>
+                    </li>
+                    <li
+                        class="capitalize text-lg hover:text-indigo-500 duration-300"
+                    >
+                        <a href="#" data-i18n="projects">projects</a>
                     </li>
                 </ul>
 
@@ -92,35 +97,47 @@
                         </svg>
                     </button>
                     <div
-                        class="absolute rounded-2xl bg-secondary shadow-xl top-9 right-2 py-1 w-[115px] hidden"
+                        class="absolute rounded-2xl bg-secondary shadow-xl top-9 py-1 w-[115px] hidden"
                         id="langMenu"
                     >
                         <button
                             class="flex items-center justify-center gap-2 text-xs py-2 w-full hover:bg-bkg"
+                            onclick="setLanguage('ar')"
+                            data-lg="ar"
                         >
                             <span
                                 class="rounded-3xl uppercase bg-indigo-500 p-1.5 text-white"
                                 >ar</span
                             >
-                            <span class="capitalize text-sm">Arabic</span>
+                            <span class="capitalize text-sm" data-i18n="arabic"
+                                >Arabic</span
+                            >
                         </button>
                         <button
                             class="flex items-center gap-2 text-xs py-2 justify-center w-full hover:bg-bkg"
+                            onclick="setLanguage('en')"
+                            data-lg="en"
                         >
                             <span
                                 class="rounded-3xl uppercase bg-indigo-500 p-1.5 text-white"
                                 >EN</span
                             >
-                            <span class="capitalize text-sm">English</span>
+                            <span class="capitalize text-sm" data-i18n="english"
+                                >English</span
+                            >
                         </button>
                         <button
                             class="flex items-center gap-2 text-xs py-2 justify-center w-full hover:bg-bkg"
+                            onclick="setLanguage('fr')"
+                            data-lg="fr"
                         >
                             <span
                                 class="rounded-3xl uppercase bg-indigo-500 py-1.5 px-[7px] text-white"
                                 >FR</span
                             >
-                            <span class="capitalize text-sm">Frensh</span>
+                            <span class="capitalize text-sm" data-i18n="frensh"
+                                >Frensh</span
+                            >
                         </button>
                     </div>
                     <label class="toggle" for="switch">
@@ -163,7 +180,7 @@
                 </div>
             </header>
             <nav
-                class="absolute h-[calc(100%-65px)] w-48 flex flex-col items-center gap-14 py-8 px-6 bg-secondary z-40 top-[65px] duration-300 -translate-x-[calc(100%+15px)]"
+                class="sm:hidden absolute h-[calc(100%-65px)] w-48 flex flex-col items-center gap-14 py-8 px-6 bg-secondary z-40 top-[65px] duration-300 hide_menu"
             >
                 <img
                     src="./assets/logo black.png"
@@ -176,25 +193,45 @@
                     class="h-12 w-12 hidden dark:block"
                 />
                 <ul class="flex flex-col gap-y-3 list-disc">
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
-                        <a href="#">home</a>
+                    <li class="capitalize text-lg duration-300">
+                        <a
+                            href="#"
+                            class="hover:text-indigo-500"
+                            data-i18n="home"
+                            >home</a
+                        >
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
-                        <a href="#">about</a>
+                    <li class="capitalize text-lg duration-300">
+                        <a
+                            href="#"
+                            class="hover:text-indigo-500"
+                            data-i18n="about"
+                            >about</a
+                        >
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
-                        <a href="#">education</a>
+                    <li class="capitalize text-lg duration-300">
+                        <a
+                            href="#"
+                            class="hover:text-indigo-500"
+                            data-i18n="skills"
+                            >skills</a
+                        >
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
-                        <a href="#">projects</a>
+                    <li class="capitalize text-lg duration-300">
+                        <a
+                            href="#"
+                            class="hover:text-indigo-500"
+                            data-i18n="education"
+                            >education</a
+                        >
+                    </li>
+                    <li class="capitalize text-lg duration-300">
+                        <a
+                            href="#"
+                            class="hover:text-indigo-500"
+                            data-i18n="projects"
+                            >projects</a
+                        >
                     </li>
                 </ul>
             </nav>
