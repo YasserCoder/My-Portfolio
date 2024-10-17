@@ -8,6 +8,14 @@ const translations = {
         english: "English",
         frensh: "frensh",
         arabic: "Arabic",
+        hi: "Hi 👋, I am",
+        first_name: "yasser",
+        last_name: "laissaoui,",
+        a: "a",
+        job: "front-end developer",
+        hero_desc:
+            "I specialize in crafting modern, responsive, and user-friendly web experiences, using the latest frontend technologies and frameworks .",
+        CV: "Download CV",
     },
     fr: {
         home: "Accueil",
@@ -18,6 +26,14 @@ const translations = {
         english: "Anglais",
         frensh: "Français",
         arabic: "Arabe",
+        hi: "Salut 👋, Je suis",
+        first_name: "Yasser",
+        last_name: "Laissaoui,",
+        a: "un",
+        job: "développeur front-end",
+        hero_desc:
+            "Je me spécialise dans la création d'expériences web modernes, réactives et conviviales en utilisant les dernières technologies et frameworks frontend.",
+        CV: "Télécharger CV",
     },
     ar: {
         home: "الصفحة الرئيسية",
@@ -28,6 +44,14 @@ const translations = {
         english: "الانجليزية",
         frensh: "الفرنسية",
         arabic: "العربية",
+        hi: "مرحباً 👋، أنا",
+        first_name: "ياسر",
+        last_name: "العيساوي",
+        a: "",
+        job: "مطور واجهة أمامية",
+        hero_desc:
+            ".أنا متخصص في إنشاء مواقع ويب حديثة، متجاوبة وسهلة الاستخدام باستخدام أحدث تقنيات وأطر العمل الأمامية",
+        CV: "تحميل السيرة الذاتية",
     },
 };
 

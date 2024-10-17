@@ -14,7 +14,13 @@ function handleDarkMode(e) {
 
 window.handleDarkMode = handleDarkMode;
 
-//  Controlling the Language
+document.addEventListener("DOMContentLoaded", () => {
+    const theme = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", theme);
+    document.querySelector("#switch").checked = theme === "dark" ? true : false;
+});
+
+//  Controlling the Language Menu
 
 const langMenu = document.getElementById("langMenu");
 const toggleLangMenu = document.getElementById("toggleLang");
@@ -33,6 +39,7 @@ const burgerLabel = document.querySelector(".buttons__burger");
 
 function handleMenu() {
     menu.classList.toggle("hide_menu");
+    menu.nextElementSibling.classList.toggle("hidden");
 }
 
 window.handleMenu = handleMenu;
@@ -51,22 +58,11 @@ document.addEventListener("click", (event) => {
     if (!isClickInsideMenu && burger.checked) {
         menu.classList.add("hide_menu");
         burger.checked = false;
+        menu.nextElementSibling.classList.add("hidden");
     }
 });
 
 // Controlling the translation
-
-// const languageSelector = document.querySelector("select");
-// languageSelector.addEventListener("change", (event) => {
-//     setLanguage(event.target.value);
-//     localStorage.setItem("lang", event.target.value);
-// });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const theme = localStorage.getItem("theme") || "light";
-    document.documentElement.setAttribute("data-theme", theme);
-    document.querySelector("#switch").checked = theme === "dark" ? true : false;
-});
 
 const setLanguage = (language) => {
     const elements = document.querySelectorAll("[data-i18n]");
@@ -81,6 +77,7 @@ const setLanguage = (language) => {
     window.history.replaceState(null, "", currentUrl);
     localStorage.setItem("lang", language);
     styleSelectedLanguage(language);
+    langMenu.classList.add("hidden");
 };
 
 window.setLanguage = setLanguage;
@@ -90,17 +87,42 @@ function getLanguageFromURL() {
     return params.get("lang") || localStorage.getItem("lang") || "en";
 }
 
+function styleSelectedLanguage(lang) {
+    Array.from(langMenu.children).forEach((btn) => {
+        if (btn.getAttribute("data-lg") === lang) {
+            btn.classList.add("bg-indigo-100", "text-black");
+        } else {
+            btn.classList.remove("bg-indigo-100", "text-black");
+        }
+    });
+}
 window.addEventListener("load", function () {
     const currentLanguage = getLanguageFromURL();
     setLanguage(currentLanguage);
 });
 
-function styleSelectedLanguage(lang) {
-    Array.from(langMenu.children).forEach((btn) => {
-        if (btn.getAttribute("data-lg") === lang) {
-            btn.classList.add("bg-bkg");
-        } else {
-            btn.classList.remove("bg-bkg");
+// Controling the active links
+
+let sections = document.querySelectorAll("section");
+let links = document.querySelectorAll("ul a");
+
+window.addEventListener("scroll", () => {
+    sections.forEach((sec) => {
+        let scroly = window.scrollY;
+        let top = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+        if (scroly >= top && scroly < top + height) {
+            links.forEach((link) => {
+                link.classList.remove("text-indigo-500");
+            });
+            if (id !== null) {
+                document
+                    .querySelectorAll("ul a[href*=" + id + "]")
+                    .forEach((e) => {
+                        e.classList.add("text-indigo-500");
+                    });
+            }
         }
     });
-}
+});

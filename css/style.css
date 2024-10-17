@@ -12,7 +12,7 @@
 :root[data-theme="dark"] {
     --color-main: #f5f6fa;
     --color-bkg: #1a1a1a;
-    --color-secondary-bkg: #2a2a2a;
+    --color-secondary-bkg: #494848;
 }
 
 .toggle {
@@ -118,10 +118,4 @@ html[dir="ltr"] .hide_menu {
 }
 html[dir="rtl"] .hide_menu {
     transform: translateX(calc(100% + 15px));
-}
-html[dir="ltr"] #langMenu {
-    right: 8px;
-}
-html[dir="rtl"] #langMenu {
-    left: 8px;
 }
