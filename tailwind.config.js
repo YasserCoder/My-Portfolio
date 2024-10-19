@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-    content: ["./**/*.html"],
+    content: ["./*.html"],
     theme: {
         container: {
             center: true,
@@ -15,6 +15,7 @@ module.exports = {
                 main: "var(--color-main)",
                 bkg: "var(--color-bkg)",
                 secondary: "var(--color-secondary-bkg)",
+                content: "var(--color-content)",
                 colored: "#FF9D29",
             },
             screens: {

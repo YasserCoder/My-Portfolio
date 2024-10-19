@@ -7,12 +7,21 @@
         <link rel="icon" type="image/png" href="./assets/logo black.png" />
         <!-- CSS Main File -->
         <link rel="stylesheet" href="css/output.css" />
+        <!-- AOS CSS fFile -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <!-- AOS JS file -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Typed JS File -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <!-- JS Main File -->
         <script type="module" src="./js/app.js" defer></script>
     </head>
     <body class="font-body bg-bkg text-main duration-300">
         <section
-            class="container relative min-h-[600px] overflow-x-clip border-b"
+            class="container relative min-h-[600px] overflow-hidden"
             id="home"
         >
             <header
@@ -102,7 +111,7 @@
                         </svg>
                     </button>
                     <div
-                        class="absolute rounded-2xl bg-secondary shadow-xl top-9 py-1 w-[115px] ltr:right-2 rtl:left-2 hidden"
+                        class="absolute rounded-2xl z-20 bg-secondary shadow-xl top-9 py-1 w-[115px] ltr:right-2 rtl:left-2 hidden"
                         id="langMenu"
                     >
                         <button
@@ -185,7 +194,7 @@
                 </div>
             </header>
             <nav
-                class="sm:hidden absolute h-[calc(100%-65px)] w-48 flex flex-col items-center shadow-lg gap-14 py-8 px-6 bg-secondary z-40 top-[65px] duration-300 hide_menu"
+                class="sm:hidden absolute h-[calc(100%-65px)] w-48 flex flex-col items-center gap-14 py-8 px-6 bg-secondary z-40 top-[65px] duration-300 hide_menu"
             >
                 <img
                     src="./assets/logo black.png"
@@ -246,10 +255,22 @@
             <div
                 class="pt-24 xl:pt20 sm:mx-10 md:mx-16 lg:mx-8 flex items-center justify-between"
             >
-                <div class="flex flex-col gap-1 max-w-[550px] xl:max-w-[680px]">
-                    <p class="sm:text-xl" data-i18n="hi">Hi 👋, I am</p>
+                <div
+                    class="flex flex-col gap-1 ltr:max-w-[550px] ltr:xl:max-w-[680px] rtl:max-w-[450px] rtl:xl:max-w-[580px]"
+                >
+                    <p
+                        class="sm:text-xl"
+                        data-i18n="hi"
+                        data-aos="fade-down"
+                        data-aos-duration="500"
+                    >
+                        Hi 👋, I am
+                    </p>
                     <p
                         class="text-2xl xxs:text-3xl sm:text-5xl xl:text-6xl font-extrabold italic uppercase font-serif ltr:ml-2 rtl:mr-2"
+                        data-aos="zoom-out"
+                        data-aos-delay="300"
+                        data-aos-duration="500"
                     >
                         <span data-i18n="first_name"> yasser </span>
                         <span
@@ -260,17 +281,22 @@
                     </p>
                     <p
                         class="xs:text-lg sm:text-2xl ltr:xs:mr-5 rtl:ml-5 self-end"
+                        data-aos="zoom-in"
+                        data-aos-delay="500"
+                        data-aos-duration="500"
                     >
                         <span data-i18n="a">a</span>
                         <span
                             class="uppercase font-semibold sm:font-bold text-indigo-500"
-                            data-i18n="job"
-                            >front-end developer</span
-                        >
+                            id="job"
+                        ></span>
                     </p>
                     <p
                         class="font-extralight my-3 xs:my-5 lg:my-6"
+                        data-aos="fade-right"
                         data-i18n="hero_desc"
+                        data-aos-delay="700"
+                        data-aos-duration="500"
                     >
                         I specialize in crafting modern, responsive, and
                         user-friendly web experiences, using the latest frontend
@@ -281,6 +307,9 @@
                     >
                         <button
                             class="ltr:mr-4 rtl:ml-4 px-4 py-3 w-fit flex items-center gap-x-4 bg-indigo-500 text-white rounded-full hover:bg-indigo-800 duration-300"
+                            data-aos="fade-right"
+                            data-aos-delay="1000"
+                            data-aos-duration="500"
                         >
                             <span data-i18n="CV"> Download CV </span>
                             <span>
@@ -305,6 +334,9 @@
                                 href="https://github.com/YasserCoder"
                                 target="_blank"
                                 class="border border-indigo-500 hover:shadow-md bg-secondary text-indigo-600 hover:shadow-indigo-700 rounded-full p-2.5 hover:scale-105 duration-300"
+                                data-aos="fade-right"
+                                data-aos-delay="1100"
+                                data-aos-duration="500"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -322,6 +354,9 @@
                                 href="https://www.linkedin.com/in/yasser-laissaoui-43ab02283/"
                                 target="_blank"
                                 class="border border-indigo-500 hover:shadow-md bg-secondary text-indigo-600 hover:shadow-indigo-700 rounded-full p-2.5 hover:scale-105 duration-300"
+                                data-aos="fade-right"
+                                data-aos-delay="1200"
+                                data-aos-duration="500"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +373,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden lg:block">
+                <div
+                    class="hidden lg:block"
+                    data-aos="fade-up"
+                    data-aos-duration="1300"
+                    data-aos-delay="1200"
+                >
                     <img
                         src="./assets/Hand coding-amico.png"
                         alt=""

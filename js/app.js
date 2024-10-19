@@ -78,6 +78,7 @@ const setLanguage = (language) => {
     localStorage.setItem("lang", language);
     styleSelectedLanguage(language);
     langMenu.classList.add("hidden");
+    updateTypedText(translations[language]["job"]);
 };
 
 window.setLanguage = setLanguage;
@@ -126,3 +127,22 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+AOS.init();
+
+let typed;
+
+function updateTypedText(text) {
+    if (typed) {
+        typed.destroy();
+    }
+
+    typed = new Typed("#job", {
+        strings: [text],
+        typeSpeed: 100,
+        backSpeed: 25,
+        startDelay: 400,
+        backDelay: 1200,
+        loop: true,
+    });
+}

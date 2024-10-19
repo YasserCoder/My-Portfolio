@@ -8,11 +8,13 @@
     --color-main: #202224;
     --color-bkg: #f8f8f8;
     --color-secondary-bkg: #fff;
+    --color-content: #b1b1b1;
 }
 :root[data-theme="dark"] {
     --color-main: #f5f6fa;
     --color-bkg: #1a1a1a;
     --color-secondary-bkg: #494848;
+    --color-content: #c4c8cf66;
 }
 
 .toggle {
