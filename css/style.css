@@ -17,6 +17,10 @@
     --color-content: #c4c8cf66;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .toggle {
     display: grid;
     place-items: center;

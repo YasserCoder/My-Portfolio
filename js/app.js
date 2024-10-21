@@ -68,7 +68,7 @@ const setLanguage = (language) => {
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((element) => {
         const translationKey = element.getAttribute("data-i18n");
-        element.textContent = translations[language][translationKey];
+        element.innerHTML = translations[language][translationKey];
     });
     document.dir = language === "ar" ? "rtl" : "ltr";
 
