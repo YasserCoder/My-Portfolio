@@ -31,6 +31,13 @@ const translations = {
         para_2024:
             "After solidifying my understanding of front-end concepts, I transitioned to real-world projects, bringing my ideas to life through practical applications. These hands-on experiences have allowed me to further hone my skills, delivering impactful and responsive web solutions that solve real user problems.",
         date_2024: "2024-Now",
+        tools: "Technologies Used :",
+        live: "live demo",
+        code: "Github Repo",
+        proj1: "LIGHTWAVE is an online store that specializes in selling electrical supplies. This Ecommerce platform allows users to browse and purchase products either as anonymous users or by creating an account.",
+        proj2: "The LIGHTWAVE Dashboard is a powerful admin panel for managing the LIGHTWAVE ecommerce platform. This dashboard provides various administrative features that allow store managers to control and monitor different aspects of the store",
+        proj3: "ID AI.Solutions is a Tech Partner for Startups, focused on providing innovative software solutions. This static website shows all the services provided by the company and its informations with the possibility to contact them .",
+        proj4: "TripGoal is a responsive user interface that present a travel agency . It provides a user-friendly interface for customers to explore a the best touristic places with guideline.",
     },
     fr: {
         home: "Accueil",
@@ -64,6 +71,13 @@ const translations = {
         para_2024:
             "Après avoir solidifié mes connaissances en front-end, j'ai réalisé des projets concrets, transformant mes idées en applications pratiques et affinant mes compétences en développant des solutions web efficaces et réactives pour répondre aux besoins des utilisateurs.",
         date_2024: "2024-Présent",
+        tools: "Technologies utilisées :",
+        live: "Démo direct",
+        code: "Dépôt Github",
+        proj1: "LIGHTWAVE est une boutique en ligne spécialisée dans la vente de fournitures électriques. Cette plateforme Ecommerce permet aux utilisateurs de parcourir et d'acheter des produits soit en tant qu'utilisateurs anonymes, soit en créant un compte.",
+        proj2: "Le tableau de bord LIGHTWAVE est un puissant panneau d'administration pour gérer la plateforme ecommerce LIGHTWAVE. Ce tableau de bord offre diverses fonctionnalités administratives permettant aux gestionnaires de magasin de contrôler et de surveiller différents aspects de la boutique.",
+        proj3: "ID AI.Solutions est un partenaire technologique pour les startups, axé sur la fourniture de solutions logicielles innovantes. Ce site web statique présente tous les services fournis par l'entreprise ainsi que ses informations, avec la possibilité de les contacter.",
+        proj4: "TripGoal est une interface utilisateur responsive qui présente une agence de voyage. Elle offre une interface conviviale permettant aux clients d'explorer les meilleurs lieux touristiques avec des guides.",
     },
     ar: {
         home: "الصفحة الرئيسية",
@@ -97,6 +111,13 @@ const translations = {
         para_2024:
             "بعد تعزيز فهمي لمفاهيم الواجهة الأمامية، انتقلت إلى المشاريع الواقعية، محولاً أفكاري إلى تطبيقات عملية. هذه التجارب العملية سمحت لي بصقل مهاراتي بشكل أكبر وتقديم حلول ويب فعالة ومتجاوبة تحل مشاكل المستخدمين الحقيقية.",
         date_2024: "إلى لآن-2024",
+        tools: "التقنيات المستخدمة :",
+        live: "رابط مباشر",
+        code: "مستودع Github",
+        proj1: "LIGHTWAVE هو متجر إلكتروني متخصص في بيع اللوازم الكهربائية. تتيح هذه المنصة للمستخدمين تصفح وشراء المنتجات سواء كمستخدمين مجهولين أو عن طريق إنشاء حساب.",
+        proj2: "لوحة تحكم LIGHTWAVE هي لوحة إدارية قوية لإدارة منصة التجارة الإلكترونية LIGHTWAVE. توفر هذه اللوحة العديد من الميزات الإدارية التي تسمح لمديري المتاجر بالتحكم في مختلف جوانب المتجر ومراقبتها.",
+        proj3: "ID AI.Solutions هو شريك تقني للشركات الناشئة، يركز على تقديم حلول برمجية مبتكرة. يعرض هذا الموقع الثابت جميع الخدمات التي تقدمها الشركة ومعلوماتها مع إمكانية الاتصال بهم.",
+        proj4: "TripGoal هو واجهة مستخدم متجاوبة تعرض وكالة سفر. يوفر واجهة سهلة الاستخدام تمكن العملاء من استكشاف أفضل الأماكن السياحية مع دليل.",
     },
 };
 
