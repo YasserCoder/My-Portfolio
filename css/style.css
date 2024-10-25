@@ -211,3 +211,21 @@ html[dir="rtl"] .hide_menu {
         padding: 30px 0;
     }
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(99, 102, 241);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #4338ca;
+    border-radius: 10px;
+}
