@@ -182,14 +182,12 @@ html[dir="rtl"] .hide_menu {
 .logos:hover .logos-slide {
     animation-play-state: paused;
 }
-
-.logos-slide {
-    display: inline-block;
-}
 .slide-left {
+    display: inline-block;
     animation: 25s slideLeft infinite linear;
 }
 .slide-right {
+    display: inline-block;
     animation: 20s slideRight infinite linear;
 }
 
@@ -217,7 +215,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--color-secondary-bkg);
     border-radius: 10px;
 }
 
