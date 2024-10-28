@@ -91,9 +91,11 @@ function getLanguageFromURL() {
 function styleSelectedLanguage(lang) {
     Array.from(langMenu.children).forEach((btn) => {
         if (btn.getAttribute("data-lg") === lang) {
-            btn.classList.add("bg-indigo-100", "text-black");
+            btn.style.backgroundColor = "#e0e7ff";
+            btn.style.color = "black";
         } else {
-            btn.classList.remove("bg-indigo-100", "text-black");
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
         }
     });
 }
@@ -102,10 +104,31 @@ window.addEventListener("load", function () {
     setLanguage(currentLanguage);
 });
 
+// Controlling Scroll to top
+
+function scrollToTop(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+
+const scrollBtn = document.getElementById("scroll-top");
+function handleScroll() {
+    if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+    ) {
+        scrollBtn.classList.remove("hidden");
+    } else {
+        scrollBtn.classList.add("hidden");
+    }
+}
 // Controling the active links
 
-let sections = document.querySelectorAll("section");
-let links = document.querySelectorAll("ul a");
+const sections = document.querySelectorAll("section");
+const links = document.querySelectorAll("ul a");
 
 window.addEventListener("scroll", () => {
     sections.forEach((sec) => {
@@ -126,7 +149,10 @@ window.addEventListener("scroll", () => {
             }
         }
     });
+    handleScroll();
 });
+
+window.scrollToTop = scrollToTop;
 
 AOS.init();
 

@@ -38,6 +38,7 @@ const translations = {
         proj2: "The LIGHTWAVE Dashboard is a powerful admin panel for managing the LIGHTWAVE ecommerce platform. This dashboard provides various administrative features that allow store managers to control and monitor different aspects of the store",
         proj3: "ID AI.Solutions is a Tech Partner for Startups, focused on providing innovative software solutions. This static website shows all the services provided by the company and its informations with the possibility to contact them .",
         proj4: "TripGoal is a responsive user interface that present a travel agency . It provides a user-friendly interface for customers to explore a the best touristic places with guideline.",
+        copyrights: "&copy; Yasser Laissaoui 2024 , All Rights Reserved .",
     },
     fr: {
         home: "Accueil",
@@ -78,6 +79,7 @@ const translations = {
         proj2: "Le tableau de bord LIGHTWAVE est un puissant panneau d'administration pour gérer la plateforme ecommerce LIGHTWAVE. Ce tableau de bord offre diverses fonctionnalités administratives permettant aux gestionnaires de magasin de contrôler et de surveiller différents aspects de la boutique.",
         proj3: "ID AI.Solutions est un partenaire technologique pour les startups, axé sur la fourniture de solutions logicielles innovantes. Ce site web statique présente tous les services fournis par l'entreprise ainsi que ses informations, avec la possibilité de les contacter.",
         proj4: "TripGoal est une interface utilisateur responsive qui présente une agence de voyage. Elle offre une interface conviviale permettant aux clients d'explorer les meilleurs lieux touristiques avec des guides.",
+        copyrights: "&copy; Yasser Laissaoui 2024, Tous droits réservés.",
     },
     ar: {
         home: "الصفحة الرئيسية",
@@ -94,7 +96,7 @@ const translations = {
         a: "",
         job: "مطور واجهة أمامية",
         hero_desc:
-            ".أنا متخصص في إنشاء مواقع ويب حديثة، متجاوبة وسهلة الاستخدام باستخدام أحدث تقنيات وأطر العمل الأمامية",
+            " متخصص في إنشاء مواقع ويب حديثة، متجاوبة وسهلة الاستخدام باستخدام أحدث تقنيات وأطر العمل الأمامية.",
         CV: "تحميل السيرة الذاتية",
         about_subtitle: "من أنا ؟",
         about_para1:
@@ -118,6 +120,7 @@ const translations = {
         proj2: "لوحة تحكم LIGHTWAVE هي لوحة إدارية قوية لإدارة منصة التجارة الإلكترونية LIGHTWAVE. توفر هذه اللوحة العديد من الميزات الإدارية التي تسمح لمديري المتاجر بالتحكم في مختلف جوانب المتجر ومراقبتها.",
         proj3: "ID AI.Solutions هو شريك تقني للشركات الناشئة، يركز على تقديم حلول برمجية مبتكرة. يعرض هذا الموقع الثابت جميع الخدمات التي تقدمها الشركة ومعلوماتها مع إمكانية الاتصال بهم.",
         proj4: "TripGoal هو واجهة مستخدم متجاوبة تعرض وكالة سفر. يوفر واجهة سهلة الاستخدام تمكن العملاء من استكشاف أفضل الأماكن السياحية مع دليل.",
+        copyrights: "&copy; ياسر العيساوي 2024، جميع الحقوق محفوظة.",
     },
 };
 

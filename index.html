@@ -48,32 +48,24 @@
                     alt="logo"
                     class="h-10 w-12 hidden dark:block"
                 />
-                <ul class="sm:flex gap-x-4 lg:gap-x-5 items-center hidden">
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
+                <ul
+                    class="sm:flex text-lg rtl:text-xl gap-x-3 md:gap-x-4 lg:gap-x-5 items-center hidden"
+                >
+                    <li class="capitalize hover:text-indigo-500 duration-300">
                         <a href="#home" data-i18n="home" class="text-indigo-500"
                             >home</a
                         >
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
+                    <li class="capitalize hover:text-indigo-500 duration-300">
                         <a href="#about" data-i18n="about">about</a>
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
+                    <li class="capitalize hover:text-indigo-500 duration-300">
                         <a href="#education" data-i18n="education">education</a>
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
+                    <li class="capitalize hover:text-indigo-500 duration-300">
                         <a href="#projects" data-i18n="projects">projects</a>
                     </li>
-                    <li
-                        class="capitalize text-lg hover:text-indigo-500 duration-300"
-                    >
+                    <li class="capitalize hover:text-indigo-500 duration-300">
                         <a href="#skills" data-i18n="skills">skills</a>
                     </li>
                 </ul>
@@ -206,16 +198,16 @@
                     alt="logo"
                     class="h-12 w-12 hidden dark:block"
                 />
-                <ul class="flex flex-col gap-y-3 list-disc">
-                    <li class="capitalize text-lg duration-300">
+                <ul class="flex flex-col text-lg rtl:text-xl gap-y-3 list-disc">
+                    <li class="capitalize duration-300">
                         <a
-                            href="#"
+                            href="#home"
                             class="hover:text-indigo-500 text-indigo-500"
                             data-i18n="home"
                             >home</a
                         >
                     </li>
-                    <li class="capitalize text-lg duration-300">
+                    <li class="capitalize duration-300">
                         <a
                             href="#about"
                             class="hover:text-indigo-500"
@@ -223,7 +215,7 @@
                             >about</a
                         >
                     </li>
-                    <li class="capitalize text-lg duration-300">
+                    <li class="capitalize duration-300">
                         <a
                             href="#education"
                             class="hover:text-indigo-500"
@@ -231,7 +223,7 @@
                             >education</a
                         >
                     </li>
-                    <li class="capitalize text-lg duration-300">
+                    <li class="capitalize duration-300">
                         <a
                             href="#projects"
                             class="hover:text-indigo-500"
@@ -239,7 +231,7 @@
                             >projects</a
                         >
                     </li>
-                    <li class="capitalize text-lg duration-300">
+                    <li class="capitalize duration-300">
                         <a
                             href="#skills"
                             class="hover:text-indigo-500"
@@ -259,7 +251,7 @@
                     class="flex flex-col gap-1 ltr:max-w-[550px] ltr:xl:max-w-[680px] rtl:max-w-[450px] rtl:xl:max-w-[580px]"
                 >
                     <p
-                        class="sm:text-xl"
+                        class="ltr:sm:text-xl rtl:sm:text-2xl"
                         data-i18n="hi"
                         data-aos="fade-down"
                         data-aos-duration="500"
@@ -267,7 +259,7 @@
                         Hi 👋, I am
                     </p>
                     <p
-                        class="text-2xl xxs:text-3xl sm:text-5xl xl:text-6xl font-extrabold italic uppercase font-serif ltr:ml-2 rtl:mr-2"
+                        class="text-2xl xxs:text-3xl sm:text-5xl xl:text-6xl rtl:text-3xl rtl:xxs:text-4xl rtl:sm:text-6xl rtl:xl:text-7xl font-extrabold italic uppercase font-serif ltr:ml-2 rtl:mr-2"
                         data-aos="zoom-out"
                         data-aos-delay="300"
                         data-aos-duration="500"
@@ -280,7 +272,7 @@
                         >
                     </p>
                     <p
-                        class="xs:text-lg sm:text-2xl ltr:xs:mr-5 rtl:ml-5 self-end"
+                        class="xs:text-lg sm:text-2xl rtl:text-lg rtl:xs:text-xl rtl:sm:text-3xl ltr:xs:mr-5 rtl:ml-5 self-end"
                         data-aos="zoom-in"
                         data-aos-delay="500"
                         data-aos-duration="500"
@@ -292,7 +284,7 @@
                         ></span>
                     </p>
                     <p
-                        class="font-extralight my-3 xs:my-5 lg:my-6"
+                        class="font-extralight my-3 xs:my-5 lg:my-6 rtl:text-lg"
                         data-aos="fade-right"
                         data-i18n="hero_desc"
                         data-aos-delay="700"
@@ -311,7 +303,9 @@
                             data-aos-delay="1000"
                             data-aos-duration="500"
                         >
-                            <span data-i18n="CV"> Download CV </span>
+                            <span data-i18n="CV" class="rtl:text-lg">
+                                Download CV
+                            </span>
                             <span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -1441,10 +1435,34 @@
                 </div>
             </div>
             <div class="py-8 border-t border-content text-center xxs:text-lg">
-                <p class="px-[15px]">
+                <p class="px-[15px]" data-i18n="copyrights">
                     &copy; Yasser Laissaoui 2024 , All Rights Reserved .
                 </p>
             </div>
         </footer>
+        <div id="scroll-top" class="fixed bottom-7 right-5 z-10 hidden">
+            <button
+                class="p-2.5 font-extrabold rounded-full bg-bkg border-2 border-main hover:shadow-xl hover:scale-105 duration-300"
+                onclick="scrollToTop(event)"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+                    />
+                    <path
+                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+                    />
+                    <path
+                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+                    />
+                </svg>
+            </button>
+        </div>
     </body>
 </html>
