@@ -33,15 +33,11 @@ To run the project locally:
 
     ```bash
     git clone https://github.com/YasserCoder/My-Portfolio.git
-    cd portfolio-website
+    cd my-portfolio
     ```
 
 2. **Open in Browser**:
    Open the `index.html` file in your browser to view the portfolio locally.
-
-## Contact
-
-If you’re interested in working together or have any questions, feel free to reach out:
 
 ## Contact
 
