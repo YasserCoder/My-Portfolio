@@ -10,13 +10,15 @@ Check out my portfolio live [here](https://yassercoder.github.io/My-Portfolio/).
 
 This portfolio website highlights my background, skills, and projects in front-end development, presenting an interactive and modern user experience. With engaging animations and a streamlined design, the site serves as a comprehensive overview of my expertise.
 
-## Sections
+## Features
 
 -   **Hero Section**: A brief introduction with dynamic, animated text.
 -   **About Me**: An overview of my professional journey, background, and development skills.
 -   **Education**: A section detailing my educational background.
 -   **Projects**: A showcase of my completed projects, with descriptions, technologies used, and links to code repositories or live demos.
 -   **Skills**: A list of my technical skills, including programming languages, frameworks, and tools.
+-   **Dark Mode**: Full support for both light and dark themes, allowing users to switch based on their preference.
+-   **Multi-Language Support**: The portfolio is available in multiple languages for broader accessibility.
 
 ## Technologies Used
 
