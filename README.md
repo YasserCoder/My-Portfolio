@@ -48,4 +48,4 @@ For any questions or feedback, please reach out to:
 -   **Yasser Laissaoui**
 -   **Email**: yasser.laiss01@gmail.com
 -   **GitHub**: [YasserCoder](https://github.com/YasserCoder)
--   **LinkedIn**: [YasserLaissaoui](https://www.linkedin.com/in/yasser-laissaoui-43ab02283/)
+-   **LinkedIn**: [YasserLaissaoui](https://www.linkedin.com/in/yasser-laissaoui/)
